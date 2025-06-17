@@ -16,7 +16,7 @@ function ContactMe() {
                         <img src={email} alt="email icon" />
                     </div>
 
-                    <a title="en56434@gmail.com" href="mailto:en56434@gmail.com" target="_blank" className="email-link">
+                    <a title="en56434@gmail.com" href="vishnuparihar239925@gmail.com" target="_blank" className="email-link">
                         Send me an email <img src={arrow} alt="arrow" />
                     </a>
                 </div>
@@ -35,15 +35,15 @@ function ContactMe() {
                     <div className="icon-container">
                         <img src={github} alt="github icon" />
                     </div>
-
-                    <a target="_blank" href="https://github.com/Daviddix" className="github-link">
+                    
+                    <a target="_blank" href="https://github.com/FullStackParihar" className="github-link">
                         Check out my Github<img src={arrow} alt="arrow icon" />
                     </a>
                 </div>
             </div>
 
             <p className="attr">
-                Designed and built by Emmanuel Nsikan-David
+                Designed and built by Vishnu Parihar
             </p>
         </div>
     </section>
