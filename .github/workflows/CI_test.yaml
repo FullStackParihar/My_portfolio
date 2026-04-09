@@ -1,11 +1,11 @@
-name: Node.js Build
+name: PR Build + Self Approve
 
 on:
   pull_request:
     branches: [ "test" ]
 
 jobs:
-  build:
+  build-and-approve:
     runs-on: ubuntu-latest
 
     strategy:
@@ -27,3 +27,11 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+      - name: Self-Approve Action
+        uses: nicklegan/github-repo-self-approve-action@v1.0.1
+        if: github.actor == 'FullStackParihar'
+        with:
+          appid: ${{ secrets.APPID }}
+          privatekey: ${{ secrets.PRIVATEKEY }}
+          installationid: ${{ secrets.INSTALLATIONID }}
